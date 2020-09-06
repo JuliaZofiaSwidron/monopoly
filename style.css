@@ -1,0 +1,132 @@
+:root{
+    --mainFont: "degular",sans-serif;
+    --shadow: 5px 5px 15px grey;
+    --textlight: white;
+    --mariacolor: #0fa3ef;
+    --januszcolor: #ff525c;
+    --hannacolor: #ff9a74;
+    --krzysztofcolor: #a1f696;
+    --kazimierzcolor: #f2d94f;
+    --paulinacolor: #7e86da;
+    --franciszkacolor: #f888bb;
+    --narcyzacolor: #71d5bf;
+}
+*{
+    box-sizing: border-box;
+    font-family: var(--mainFont);
+    font-weight: 100;
+    font-size: 20px;
+}
+img{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+body{
+    margin:0
+}
+section{
+    width: 100%;
+    height: 55vw;
+    display: flex;
+    justify-content: space-around;
+   
+}
+section.top{
+    height: 27.25vw;
+}
+section.bottom{
+    height: 27.25vw;
+    width: 100vw;
+    
+}
+.character{
+    width: 20vw;
+    height: 27.25vw;
+    box-shadow: var(--shadow);
+    position: relative;
+    cursor: pointer;
+}
+.character:hover > img{
+    filter: grayscale(0%);
+}
+.character > img{
+    filter: grayscale(100%);
+}
+.character > h1{
+    width: 100%;
+    height: 2em;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1em;
+    position: absolute;
+    top: 19vw;
+    z-index: 2;
+    color: var(--textlight);
+}
+
+
+.category{
+   width: 20vw;
+    height: 55vw;
+    box-shadow: var(--shadow);
+    position: relative;
+    cursor: pointer;
+    
+}
+.category:hover > img{
+    filter: grayscale(0%);
+}
+.category > img{
+    filter: grayscale(100%);
+}
+.category > h1{
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    line-height: 2.2em;
+    position: absolute;
+    top: 42vw;
+    z-index: 2;
+    color: var(--textlight);
+}
+#postaci > h1{
+    background-color: var(--mariacolor);
+}
+#archiwum >  h1{
+    background-color: var(--januszcolor);
+}
+#intstrukcja> h1{
+    background-color: var(--hannacolor);
+}
+#oprojekcie > h1{
+    background-color: var(--krzysztofcolor);
+}
+#krzysztof > h1{
+    background-color: var(--krzysztofcolor);
+}
+#hanna > h1{
+    background-color: var(--hannacolor);
+}
+#janusz > h1{
+    background-color: var(--januszcolor);
+}
+
+#maria > h1{
+    background-color: var(--mariacolor);
+}
+
+#kazimierz > h1{
+    background-color: var(--kazimierzcolor);
+}
+
+#paulina > h1{
+    background-color: var(--paulinacolor);
+}
+
+#franciszka >h1{
+    background-color: var(--franciszkacolor);
+}
+#narcyza >h1{
+    background-color: var(--narcyzacolor);
+}

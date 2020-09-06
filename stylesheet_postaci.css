@@ -1,0 +1,43 @@
+:root{
+    --mainFont: "degular",sans-serif;
+    --shadow: 5px 5px 15px grey;
+    --textlight: white;
+    --mariacolor: #0fa3ef;
+    --januszcolor: #ff525c;
+    --hannacolor: #ff9a74;
+    --krzysztofcolor: #a1f696;
+    --kazimierzcolor: #f2d94f;
+    --paulinacolor: #7e86da;
+    --franciszkacolor: #f888bb;
+    --narcyzacolor: #71d5bf;
+}
+*{
+    box-sizing: border-box;
+    font-family: var(--mainFont);
+    font-weight: 100;
+    font-size: 20px;
+}
+main{
+    margin: 0;
+    display: flex;
+}
+.port{
+    top:0;
+    right: 0;
+    margin:0;
+    position: fixed;
+}
+img{
+    height: 100vh;
+    width: auto;
+}
+.module{
+    display: none;
+}
+.backbtn{
+    display: flex;
+}
+.back{
+    width: 20px;
+    height: 20px;
+}
