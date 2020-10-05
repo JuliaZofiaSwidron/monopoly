@@ -18,6 +18,9 @@
     font-weight: 100;
     font-size: 1.2vw;
 }
+#landscape{
+    display: none;
+}
 main{
     margin: 0;
     display: flex;
@@ -56,7 +59,7 @@ img{
 .info{
     padding: 4vw 4vw;
     /* min-width: 45vw; */
-    max-width: 63vw;
+    width: 63vw;
 }
 .info > h1{
     margin-top: 8vw;
@@ -70,7 +73,7 @@ img{
 }
 .info > p >a{
     color: var(--grey);
-    width: 62vw;
+    width: 100%;
 }
 .info > p >a:hover{
     color: var(--januszcolor);
@@ -99,11 +102,12 @@ img{
 }
 #module_first.open,#module_second.open, #module_third.open{
     display: block;
-    position: absolute;
+    position: fixed;
     z-index: 4;
     top: 0;
     left:0;
     margin:0;
+    overflow: scroll;
 }
 #module_first.open > div.bckg > img, #module_second.open > div.bckg > img, #module_third.open > div.bckg > img{
     position: relative;
@@ -138,4 +142,47 @@ img{
     left: 0;
     z-index: 2;
 
+}
+
+@media only screen and (min-width: 350px) and (max-width: 800px){
+ *{
+     font-size: 18px;
+ }   
+ .info > h1{
+     font-size: 25px;
+ }
+.min > h2{
+    width: 40vw;
+    height: auto;
+    margin: 5px;
+}
+.min{
+   display: block;
+}
+#module_first.open > div.background, #module_second.open > div.background, #module_third.open > div.background{
+    height: 150%;
+    
+
+}
+}
+@media only screen and (max-width: 349px){
+    body{
+        margin:0;
+    }
+    #landscape{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--januszcolor);
+        z-index: 10;
+        position: fixed;
+    }
+    #landscape > h1{
+        color: white;
+        padding: 30px;
+        font-size: 15px;
+    }
+    main{
+        display: none;
+    }
 }

@@ -17,6 +17,9 @@
     font-weight: 100;
     font-size: 20px;
 }
+#landscape{
+    display: none;
+}
 img{
     height: auto;
     width: 100%;
@@ -129,4 +132,48 @@ section.bottom{
 }
 #narcyza >h1{
     background-color: var(--narcyzacolor);
+}
+
+@media only screen and (min-width:920px)and (max-width:1200px){
+    .category{
+        width: 25vw;
+    }
+    .character{
+        width: 25vw;
+    }
+}
+@media only screen and (max-width:919px){
+    .category{
+        width: 25vw;
+    }
+    .category >h1{
+        font-size: 18px;
+    }
+    .character{
+        width: 25vw;
+    }
+    .character >h1{
+        font-size: 18px;
+    }
+}
+@media only screen and (max-width: 349px){
+    #landscape{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--januszcolor);
+        z-index: 10;
+        position: fixed;
+    }
+    #landscape > h1{
+        color: white;
+        padding: 30px;
+        font-size: 15px;
+    }
+    header{
+        display: none;
+    }
+    main{
+        display: none;
+    }
 }

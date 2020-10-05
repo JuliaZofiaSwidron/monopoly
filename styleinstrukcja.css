@@ -1,0 +1,343 @@
+:root{
+    --mainFont: "lato",sans-serif;
+    --shadow: 5px 5px 15px grey;
+    --textlight: white;
+    --mariacolor: #0fa3ef;
+    --januszcolor: #ff525c;
+    --hannacolor: #ff9a74;
+    --krzysztofcolor: #a1f696;
+    --kazimierzcolor: #f2d94f;
+    --paulinacolor: #7e86da;
+    --franciszkacolor: #f888bb;
+    --narcyzacolor: #71d5bf;
+}
+*{
+    box-sizing: border-box;
+    font-family: var(--mainFont);
+    font-weight: 100;
+    font-size: 20px;
+}
+#landscape{
+    display: none;
+}
+img{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: var(--shadow);
+}
+body{
+    margin: 0;
+}
+div > .gradient{
+    height: 50px;
+    width: 100%;
+}
+
+.gradient{
+    height: 50px;
+    width: 100%;
+    background-image: linear-gradient(to right, var(--paulinacolor), var(--mariacolor), var(--narcyzacolor), var(--krzysztofcolor),var(--kazimierzcolor),var(--hannacolor),var(--januszcolor)); 
+}
+h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    margin-top: .25rem;
+}
+nav.topnav > ol {
+    display: flex;
+    list-style-type: none; 
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+nav.topnav > ol > li > a{
+    text-transform: uppercase;
+    border-right:1px solid black;
+    padding: .8rem;
+    text-decoration: none;
+    color: black;
+    
+}
+
+nav.topnav > ol> li >a.firstnav{
+    border-left: 1px solid black;
+}
+section {
+    padding: .5rem 4rem
+}
+section p{
+    width: 60vw;
+}
+section > div.gradient{
+    padding: 0;
+    width: auto;
+    margin: .5rem -4rem;
+}
+#postaci > p{
+    text-align: center;
+    margin: 2rem 10vw;
+
+}
+.photos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    justify-content: space-around;
+}
+.photos > div{
+    margin : 10px;
+}
+.photos > div > div > h1{
+    font-size: 1rem;
+}
+.photos > div > div > h2{
+    font-size: 1rem;
+    text-align: center;
+}
+#zawartoscpudelka > .zawpud {
+    display: flex;
+    justify-content: space-between;
+}
+#zawartoscpudelka > .zawpud > div {
+    height: 40vw;
+    width: 60vw;
+}
+#zawartoscpudelka > .zawpud > div >img{
+    height: 100%;
+    width: 100%;
+}
+
+strong{
+    font-weight: bold;
+    line-height: 2rem;
+}
+section > h2{
+    color: white;
+    font-size: 1.4rem;
+   margin-left: -4rem;
+   padding: .5rem;
+   width: 25vw;
+   text-align: right;
+    text-transform: uppercase;
+    background-color: var(--hannacolor);
+    font-weight: bold;
+}
+section > div.mainclass{
+    display: flex;
+}
+.lok {
+    height: 25rem;
+    width: auto;
+    align-self: center;
+}
+section > div>div >h3{
+    font-size: 1.2rem;
+    color: var(--paulinacolor);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+section > div>div >p{
+    margin:1rem 2rem 0.5rem 4rem ;
+}
+section > div>div >h4{
+    font-size: 1rem;
+    color: var(--narcyzacolor);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin:1rem 1rem .5rem 4rem ;
+}
+.kartylokacji{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    height: 36vw;
+}
+.kartylokacji >div{
+    height: 20vw;
+    width: auto;
+    padding: 10px;
+}
+.polspec{
+    display: flex;
+    justify-content: space-between;
+    height: 30vw
+}
+.polspec >div> h3{
+    font-size: 1.2rem;
+    color: var(--paulinacolor);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.polspec >div> p{
+    width: 40vw;
+}
+.screen {
+    width: auto;
+    height: 15vw;
+}
+section>h3{
+    font-size: 1.2rem;
+    color: var(--paulinacolor);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+section > h4 {
+    font-size: 1rem;
+    color: var(--narcyzacolor);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin:1rem 1rem .5rem 4rem ;
+}
+.sprzedaj {
+    margin:1rem 1rem .5rem 4rem ;
+}
+.Bibliografia{
+    font-size: 13px;
+}
+.Bibliografia > a{
+    font-size: 13px;
+    color: var(--januszcolor)
+}
+@media only screen and (min-width: 601px) and (max-width: 1100px){
+    .photos{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+        justify-content: space-around;
+    }
+    section > h2{
+       width: 50vw;
+       text-align: right;
+        text-transform: uppercase;
+        background-color: var(--hannacolor);
+        font-weight: bold;
+    }
+    section > div.mainclass{
+        display: block;
+    }
+    .lok{
+        height: auto;
+        width: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .kartylokacji{
+        margin-bottom: 10vw;
+    }
+    .polspec{
+        height:auto;
+        margin-bottom: 10vw;
+    }
+    .screen{
+        height: auto;
+        width: 30vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media only screen and (min-width: 350px) and (max-width: 600px){
+    body{
+    margin:0;
+    width: 100vw;
+}
+    header{
+        width: 100vw;
+    }
+    main{
+        margin: 0 20px;
+    }
+    .photos{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50vw, 1fr));
+        justify-content: space-around;
+    }
+    #zawartoscpudelka > .zawpud{
+        display: block;
+    }
+    #zawartoscpudelka > .zawpud > div {
+        width: 80vw;
+        height: 50vw;
+    }
+    section > div.gradient{
+        margin: .5rem -20px;
+    }
+    section > h2{
+        width: 70vw;
+        text-align: right;
+         text-transform: uppercase;
+         background-color: var(--hannacolor);
+         font-weight: bold;
+     }
+     section > div.mainclass{
+         display: block;
+         height: auto;
+     }
+     .lok{
+         height: auto;
+         width: 30vw;
+         margin-left: auto;
+         margin-right: auto;
+     }
+    
+     .polspec{
+         height:auto;
+         display: block;
+         margin-bottom: 10vw;
+     }
+     .screen{
+         height: auto;
+         width: 30vw;
+         margin-left: auto;
+         margin-right: auto;
+     }
+    
+     .kartylokacji{
+        margin-bottom: 10vw;
+    }
+    section {
+        padding: .5rem 0rem
+    }
+    section p{
+        width: 90vw;
+
+    }
+    #postaci > p {
+        margin: 0;
+    }
+    nav.topnav > ol{
+        width: 100%;
+        margin: 0;
+    }
+    nav.topnav > ol > li > a{
+        font-size: .6rem;
+        padding: 0.1rem;
+    }
+    section > div>div >p{
+        margin:0;
+    }
+    .polspec >div> p{
+        width: 90vw;
+    }
+    .sprzedaj{
+        margin:0;
+    }
+}
+@media only screen and (max-width: 349px){
+    #landscape{
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--januszcolor);
+        z-index: 10;
+        position: fixed;
+    }
+    #landscape > h1{
+        color: white;
+        padding: 30px;
+        font-size: 15px;
+    }
+    section{
+        display: none;
+    }
+}

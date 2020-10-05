@@ -1,0 +1,72 @@
+:root{
+    --mainFont: "lato",sans-serif;
+    --shadow: 5px 5px 15px grey;
+    --textlight: white;
+    --mariacolor: #0fa3ef;
+    --januszcolor: #ff525c;
+    --hannacolor: #ff9a74;
+    --krzysztofcolor: #a1f696;
+    --kazimierzcolor: #f2d94f;
+    --paulinacolor: #7e86da;
+    --franciszkacolor: #f888bb;
+    --narcyzacolor: #71d5bf;
+}
+*{
+    box-sizing: border-box;
+    font-family: var(--mainFont);
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.backbtn{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
+.back{
+    width: 1.6vw;
+    height: 1.6vw;
+}
+.backbtn > a{
+    color: lightgrey;
+    padding-left: 1vw;
+    cursor: pointer;
+    line-height: 1.4vw;
+    text-decoration: none;
+    font-weight: bold;
+}
+.backbtn > a:visited{
+    color: lightgray;
+}
+main{
+    margin: 10vw;
+    align-content: center;
+    position: relative;
+}
+blockquote{
+    color: var(--januszcolor);
+    font-weight: bold;
+    text-align: center;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+p{
+    max-width: 80rem;
+    margin: 4rem 2rem;
+}
+strong{
+    color: var(--mariacolor);
+    font-weight: bold;
+    max-width: 60rem;
+}
+.logo {
+    display: flex;
+    height: 20vw;
+    width: 70vw;
+    justify-content: space-around;
+}
+.logo >img {
+    height: 100%;
+    width: auto;
+}
